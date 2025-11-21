@@ -23,11 +23,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="{{ path('app_home') }}">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ path('app_loisirs') }}">Loisirs</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ path('app_cv') }}">CV</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ path('app_portfolio') }}">E-Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ path('app_inscription') }}">Inscription</a></li>
+                <li class="nav-item me-2">
+                    <button class="btn btn-outline-light" type="button" onclick="location.href='{{ path('app_home') }}'">Accueil</button>
+                </li>
+
+                <li class="nav-item me-2">
+                    <button class="btn btn-outline-light" type="button" onclick="location.href='{{ path('app_loisirs') }}'">Loisirs</button>
+                </li>
+
+                <li class="nav-item me-2">
+                    <button class="btn btn-outline-light" type="button" onclick="location.href='{{ path('app_cv') }}'">CV</button>
+                </li>
+
+                <li class="nav-item me-2">
+                    <button class="btn btn-outline-light" type="button" onclick="location.href='{{ path('app_portfolio') }}'">E-Portfolio</button>
+                </li>
+
+                <li class="nav-item me-2">
+                    <button class="btn btn-outline-light" type="button" onclick="location.href='{{ path('app_inscription') }}'">Inscription</button>
+                </li>
             </ul>
         </div>
     </div>
